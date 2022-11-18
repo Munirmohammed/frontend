@@ -8,6 +8,19 @@
     color: #fff;
     & > .logo {
       color: #fff;
+      // display: flex;
+    }
+    .log {
+      // align-items: flex-start;
+      margin-top: 20px;
+      // border: solid 1px #fff;
+    }
+    .align {
+      // padding-top: 20px;
+      margin-top: 0;
+      // border: solid 1px #fff;
+      text-align: center;
+      // align-items: center;
     }
   }
 }

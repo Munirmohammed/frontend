@@ -2,13 +2,19 @@ import React from 'react'
 import { SiMeetup } from 'react-icons/si'
 import { Link } from 'react-router-dom'
 import './Home.scss'
+import heroImg from '../../../src/assets/inv-img.png'
 
 const Home = () => {
   return (
     <div className="home">
       <nav className="container --flex-between">
         <div className="logo">
-          <SiMeetup size={35} />
+          <div className="mun">
+            <span className="log">
+              <SiMeetup size={35} />
+            </span>
+            <span className="align">MunInvent</span>
+          </div>
         </div>
         <ul className="home-links">
           <li>
@@ -41,9 +47,13 @@ const Home = () => {
           </div>
           <div className="--flex-start">
             <NumberText num="14K" text="Brand Owners" />
+            <NumberText num="23K" text="Active Users" />
+            <NumberText num="500+" text="Partners" />
           </div>
         </div>
-        <div className="hero-image"></div>
+        <div className="hero-image">
+          <img src={heroImg} alt="" />
+        </div>
       </section>
     </div>
   )
