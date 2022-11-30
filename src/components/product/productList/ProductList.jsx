@@ -6,10 +6,10 @@ import './productList.scss'
 
 const ProductList = ({ products, isLoading }) => {
   const shortenText = (text, n) => {
-    if (text.length > n) {
-      const shortenedText = text.substring(0, n).concat('...')
-      return shortenedText
-    }
+    // if (text.length > n) {
+    //   const shortenedText = text.substring(0, n).concat('...')
+    //   return shortenedText
+    // }
     return text
   }
   return (
